@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  'sans-serif';
+}
+
+
+/* --------- Navbar section-------- */
+
+
+.main-nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.side-nav {
+    height: 780px;
+    width: 25%;
+    background-color: rgb(8, 8, 8);
+    display: inline-block;
+    position: fixed;
+    
+}
+
+.side-nav img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.side-nav h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color :#fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo-div {
+    margin-left: 90px;
+    
+}
+
+.logo-div i {
+    font-size: 28px;
+    margin-top: 8px;
+    color: rgb(248, 235, 221);
+}
+
+.main-nav li {
+    font-size: 22px;
+    margin: 30px 0px 0px 59px;
+    list-style: none;
+    color: rgb(141, 138, 133);
+}
+
+.fa-house {
+    margin-right: 20px;
+    color: rgb(141, 139, 137);
+}
+
+.fa-user {
+    margin-right: 20px;
+    color:  rgb(141, 139, 137);
+}
+
+.fa-file {
+    margin-right: 20px;
+    color:  rgb(49, 133, 230);
+
+}
+.fa-toilets-portable {
+    margin-right: 20px;
+    color:  rgb(141, 139, 137);
+}
+
+.fa-server {
+    margin-right: 20px;
+    color:  rgb(141, 139, 137);
+}
+
+.fa-envelope {
+    margin-right: 20px;
+    color:  rgb(141, 139, 137);
+}
+
+.text {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    color: antiquewhite;
+
+}
+
+.layout {
+    width: 75%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.back {
+    background-image: url(./hero-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* overflow: auto; */
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.back h1 {
+    font-size: 70px;
+    margin-right: 250px;
+    margin-bottom: 10px;
+    color: #cecb19;
+    font-family: monospace;
+}
+
+/* -----media quary------ */
+
+@media (min-width: 720px) and (max-width: 1280px){
+
+    .main-nav {
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side-nav {
+        height: 500px;
+        width: 0%;
+        display: none;
+        background-color: rgb(221, 212, 212);
+        position: fixed;
+        /* display: none; */
+    }
+
+    .layout {
+        width: 100%;
+        height: 100vh;
+        /* flex-wrap: wrap; */
+        display: flex;
+        /* position: absolute; */
+        right: 0;
+        top: 0;
+        left: 0;
+
+    }
+    .back {
+        background-image: url(./Picture/bearded-young-man.webp);
+        width: 10%;
+        height: 10vh;
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* overflow: auto; */
+        background-attachment: fixed;
+        flex-wrap: wrap;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    
+    
+}
+
+/* -- -----About section----- */
+
+.container {
+    width: 100%;
+}
+
+.container h1 {
+    margin-left: 20px;
+    padding-top: 50px;
+    color: #173b6c;
+}
+
+.container hr {
+    width: 100px;
+    margin-left: 20px;
+    color: #149ddd;
+    /* height: 100px; */
+
+}
+
+.container p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-size: 17px;
+
+}
+
+
+.midLeft img {
+    width: 80%;
+    margin-left: 30px;
+}
+
+/* .midRight h1{
+ margin-left: 10px;
+
+} */
+
+.midRight p {
+    margin: 10px 30px 20px 0px;
+    font-size: 18px;
+
+}
+
+.centerSectionMain {
+    display: flex;
+}
+
+.personalInfoMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textt {
+    font-size: 20px;
+}
+
+@media (max-width:550px) {
+    .centerSectionMain {
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: column;
+        width: 100%;
+    }
+    .personalInfoMain {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .midRight {
+        margin: 100px 30px 20px 0px;
+        font-size: 18px;
+        width: 100%;
+    
+    }
+    
+.midLeft img {
+    width: 100%;
+    /* margin-left: 30px; */
+}
+}
+
+
+/* -----Facts section----- */
+
+
+
+.four-divmain {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.four-divmain h1 {
+    font-size: 50px;
+}
+
+.four-divmain h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fa-face-smile {
+    font-size: 50px;
+    margin: 10px;
+    color: #149ddd;
+}
+
+.fa-address-book {
+    font-size: 50px;
+    margin: 10px;
+    color: #149ddd;
+}
+
+.fa-headset {
+    font-size: 50px;
+    margin: 10px;
+    color: #149ddd;
+}
+
+#fa-user {
+    font-size: 50px;
+    margin: 10px;
+    color: #149ddd;
+}
+
+
+
+/* -----Skills section----- */
+
+
+.sklis {
+    text-align: center;
+}
+
+.sklis7 {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.sklis-1 {
+    margin-top: 10px;
+    width: 300px;
+    height: 15px;
+    background-color: #149ddd;
+}
+
+
+/* -------Resume  section----- */
+
+.resume-maindiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.left-maindiv {
+    margin-left: 50px;
+    width: 90%;
+    /* border-right: 2px solid black; */
+}
+
+
+.one h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.one h2 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.one p {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.one li {
+    color: black;
+    list-style-type: disc;
+
+}
+
+.two h1 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.two h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.two p {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.three h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.three h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.three p {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.four h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.four h2 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.four p {
+    font-size: 17px;
+    margin-top: 10px;
+    /* line-height: 30px; */
+}
+
+.four li {
+    color: black;
+    list-style-type: disc;
+    /* margin-left: 50px; */
+}
+
+.five h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.five h2 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.five p {
+    font-size: 17px;
+    margin-top: 10px;
+    /* line-height: 30px; */
+}
+
+.five li {
+    color: black;
+    list-style-type: disc;
+    /* margin-left: 50px; */
+}
+
+.right-maindiv {
+    /* margin-left: 30px; */
+    width: 90%;
+    /* border-left: 2px solid black ; */
+
+}
+
+
+/* -------portfolio section------ */
+
+.six-card {
+    display: flex;
+    background-color: rgb(196, 230, 243);
+}
+
+
+#pict {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+/* ----services section---- */
+
+
+.services-uperdiv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.services-uperdiv i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #149ddd;
+
+}
+
+.services-uperdiv h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.services-lowerdiv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.services-lowerdiv i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #149ddd;
+
+}
+
+.services-lowerdiv h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.services-lowerdiv p {
+    /* font-size: 25px; */
+    margin-bottom: 30px;
+}
+
+
+/* -------Testimonials   section----- */
+
+
+
+.person5 {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #f5f8fd;
+}
+
+.five-person {
+    width: 280px;
+    height: 180px;
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.five-person p {
+    text-align: center;
+    color: rgb(119, 112, 112);
+
+}
+
+
+/* <!-- ---------- five imge section --------- --> */
+
+.five-img {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f8fd;
+    height: 300px;
+}
+
+.img-five img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 6rem;
+}
+
+
+/* --------- empty div section --------- */
+
+.empty {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color:#fff;
+    height: 50px;
+}
+
+.empty-div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eee0e0;
+    border: 1px solid rgb(90, 171, 171);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.empty-div:hover {
+    background-color: rgb(45, 45, 137);
+}
+
+
+
+/* -----Contact section------ */
+
+.contact-maindiv {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-rightdiv {
+    width: 40%;
+    height: 95vh;
+    box-shadow: rgba(50, 50, 93, 0.40) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+}
+
+.contact-leftdiv {
+    width: 50%;
+    height: 95vh;
+    box-shadow: rgba(50, 50, 93, 0.40) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+
+}
+
+
+#map {
+    width: 420px;
+    height: 250px;
+    margin: 40px 40px 0px 27px;
+
+}
+
+.contact-rightdiv i {
+    font-size: 37px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #149ddd;
+}
+
+.contact-rightdiv h1 {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.contact-rightdiv p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+
+.form {
+    display: flex;
+}
+
+#name-bar {
+    width: 35vh;
+    height: 45px;
+    margin: 15px;
+}
+
+#email-bar {
+    width: 35vh;
+    height: 45px;
+    margin: 15px;
+}
+
+#subject-bar {
+    width: 90%;
+    height: 45px;
+    margin: 20px;
+
+}
+
+#messege-bar {
+    width: 90%;
+    height: 250px;
+    margin: 20px;
+}
+
+.form h1 {
+    margin: 20px 0px 0px 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-leftdiv h1 {
+    margin: 20px 0px 0px 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.formmain-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn5 {
+    height: 40px;
+    width: 170px;
+    background-color: #149ddd;
+    color: white;
+    font-size: 17px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //type wrtier css code // */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fff;
+  
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 10px;
+  height: 100px;
+  line-height: 90px;
+  overflow: hidden;
+
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #02bcdd;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 5 ;
+  animation: slide 15s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #e3e6e9;
+  border-left: 2px solid #000000;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
